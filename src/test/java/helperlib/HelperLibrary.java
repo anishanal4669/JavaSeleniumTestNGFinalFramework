@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class HelperLibrary extends BaseTest {
 
-    public static final String SCREENSHOT_FOLDER = "//src//test//resources//screenshots//";
+    public static final String SCREENSHOT_FOLDER = "//screenshots//";
 
     public void captureScreenshot(String fileName){
         File srcFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

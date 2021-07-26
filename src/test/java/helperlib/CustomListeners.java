@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class CustomListeners implements ITestListener {
 
-    public static final String SCREENSHOT_DIRECTORY = "//src//test//resources//screenshots";
+    public static final String SCREENSHOT_DIRECTORY = "//screenshots";
 
     HelperLibrary library = new HelperLibrary();
 
