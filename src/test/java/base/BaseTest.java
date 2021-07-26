@@ -23,7 +23,7 @@ public class BaseTest {
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(ReadPropFiles.getPropertyValue("application_under_test"));
+        driver.get("https://ui.cogmento.com/");
         applyFluent().until(ExpectedConditions.titleIs("Cogmento CRM"));
     }
 

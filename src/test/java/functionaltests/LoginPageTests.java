@@ -26,8 +26,8 @@ public class LoginPageTests extends PageDriver {
 
     @Test(priority = 3)
     public void performLoginTests() throws IOException {
-        loginPage().emailField().sendKeys(ReadPropFiles.getPropertyValue("email_address"));
-        loginPage().passwordField().sendKeys(ReadPropFiles.getPropertyValue("password"));
+        loginPage().emailField().sendKeys("anishanal4669@gmail.com");
+        loginPage().passwordField().sendKeys("Selenium@123");
         loginPage().submitButton().click();
         Assert.assertTrue(homePage().headerElement().isDisplayed());
     }

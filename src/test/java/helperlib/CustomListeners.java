@@ -17,18 +17,18 @@ public class CustomListeners implements ITestListener {
     @Override
     public void onTestFailure(ITestResult iTestResult){
         System.out.println("On Test Failure");
-        String fileName = iTestResult.getName();
-        library.captureScreenshot(fileName);
+//        String fileName = iTestResult.getName();
+//        library.captureScreenshot(fileName);
     }
 
     @Override
     public void onStart(ITestContext iTestContext){
         System.out.println("Clearing Cache");
-        try {
-            FileUtils.cleanDirectory(new File(System.getProperty("user.dir") + SCREENSHOT_DIRECTORY));
-        }catch(IOException e){
-            e.printStackTrace();
-        }
+//        try {
+//          //  FileUtils.cleanDirectory(new File(System.getProperty("user.dir") + SCREENSHOT_DIRECTORY));
+//        }catch(IOException e){
+//            e.printStackTrace();
+//        }
         }
 
 }
